@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             if (Physics2D.OverlapCircle(groundcheckobj.transform.position, groundcheckradius, groundmask))
             {
@@ -49,3 +49,4 @@ public class PlayerController : MonoBehaviour
     {
         transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
     }
+}
